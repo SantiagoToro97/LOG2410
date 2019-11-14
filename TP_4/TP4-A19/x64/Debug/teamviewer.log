@@ -1,1 +1,11 @@
-﻿
+﻿  Moc'ing TeamViewer.h...
+  moc_TeamViewer.cpp
+  Team.cpp
+  Génération de code en cours...
+qtmaind.lib(qtmain_winrt.obj) : error LNK2019: symbole externe non résolu __imp_RoInitialize référencé dans la fonction WinMain
+qtmaind.lib(qtmain_winrt.obj) : error LNK2019: symbole externe non résolu __imp_RoGetActivationFactory référencé dans la fonction "public: __cdecl AppContainer::AppContainer(void)" (??0AppContainer@@QEAA@XZ)
+qtmaind.lib(qtmain_winrt.obj) : error LNK2019: symbole externe non résolu WindowsCreateStringReference référencé dans la fonction "private: void __cdecl Microsoft::WRL::Wrappers::HStringReference::CreateReference(wchar_t const *,unsigned int,unsigned int)" (?CreateReference@HStringReference@Wrappers@WRL@Microsoft@@AEAAXPEB_WII@Z)
+qtmaind.lib(qtmain_winrt.obj) : error LNK2019: symbole externe non résolu WindowsDeleteString référencé dans la fonction "public: void __cdecl Microsoft::WRL::Wrappers::HString::Release(void)" (?Release@HString@Wrappers@WRL@Microsoft@@QEAAXXZ)
+qtmaind.lib(qtmain_winrt.obj) : error LNK2019: symbole externe non résolu WindowsGetStringRawBuffer référencé dans la fonction "public: wchar_t const * __cdecl Microsoft::WRL::Wrappers::HString::GetRawBuffer(unsigned int *)const " (?GetRawBuffer@HString@Wrappers@WRL@Microsoft@@QEBAPEB_WPEAI@Z)
+qtmaind.lib(qtmain_winrt.obj) : error LNK2019: symbole externe non résolu RoOriginateError référencé dans la fonction "public: static void __cdecl Microsoft::WRL::ErrorHelper<0>::OriginateError(long,struct HSTRING__ *)" (?OriginateError@?$ErrorHelper@$0A@@WRL@Microsoft@@SAXJPEAUHSTRING__@@@Z)
+debug\\teamviewer.exe : fatal error LNK1120: 6 externes non résolus

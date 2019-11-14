@@ -10,6 +10,8 @@
 
 #include <memory>
 #include <list>
+#include <iostream>
+#include <string>
 
 // Configuration du stockage des enfants des objets composites
 using TeamComponentPtr = std::unique_ptr<class AbsTeamComponent>;

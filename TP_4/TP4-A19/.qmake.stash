@@ -1,0 +1,68 @@
+QMAKE_CXX.QT_COMPILER_STDCXX = 199711L
+QMAKE_CXX.QMAKE_MSC_VER = 1921
+QMAKE_CXX.QMAKE_MSC_FULL_VER = 192127702
+QMAKE_CXX.COMPILER_MACROS = \
+    QT_COMPILER_STDCXX \
+    QMAKE_MSC_VER \
+    QMAKE_MSC_FULL_VER
+QMAKE_CXX.INCDIRS = \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.21.27702/ATLMFC/include" \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.21.27702/include" \
+    "C:/Program Files (x86)/Windows Kits/NETFXSDK/4.6.1/include/um" \
+    "C:/Program Files (x86)/Windows Kits/10/include/10.0.17763.0/ucrt" \
+    "C:/Program Files (x86)/Windows Kits/10/include/10.0.17763.0/shared" \
+    "C:/Program Files (x86)/Windows Kits/10/include/10.0.17763.0/um" \
+    "C:/Program Files (x86)/Windows Kits/10/include/10.0.17763.0/winrt" \
+    "C:/Program Files (x86)/Windows Kits/10/include/10.0.17763.0/cppwinrt"
+QMAKE_CXX.LIBDIRS = \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.21.27702/lib/x64/store" \
+    "C:/Program Files (x86)/Windows Kits/NETFXSDK/4.6.1/lib/um/x64" \
+    "C:/Program Files (x86)/Windows Kits/10/lib/10.0.17763.0/ucrt/x64" \
+    "C:/Program Files (x86)/Windows Kits/10/lib/10.0.17763.0/um/x64"
+QMAKE_CXX.PATH = \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.21.27702/bin/HostX86/x64" \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.21.27702/bin/HostX86/x86" \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/VCPackages" \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow" \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer" \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/bin/Roslyn" \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools/x64" \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools" \
+    "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/x64" \
+    "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019" \
+    "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.6.1 Tools" \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/FSharp" \
+    "C:/Program Files (x86)/Windows Kits/10/bin/10.0.17763.0/x86" \
+    "C:/Program Files (x86)/Windows Kits/10/bin/x86" \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin" \
+    C:/Windows/Microsoft.NET/Framework/v4.0.30319 \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE" \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools" \
+    "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.0/include" \
+    "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.0/extras/CUPTI/libx64" \
+    "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.0/bin" \
+    C:/Logiciels/Python-3.7.3/Scripts \
+    C:/Logiciels/Python-3.7.3 \
+    C:/Windows/system32 \
+    C:/Windows \
+    C:/Windows/System32/Wbem \
+    C:/Windows/System32/WindowsPowerShell/v1.0 \
+    C:/Windows/CCM \
+    C:/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps \
+    /bin \
+    "C:/Program Files/Git/cmd" \
+    "C:/Program Files/TortoiseGit/bin" \
+    "C:/Program Files/TortoiseSVN/bin" \
+    "C:/Program Files/MATLAB/R2019a/bin" \
+    "C:/Program Files (x86)/PuTTY" \
+    C:/Logiciels/uppaal-tiga-0.17/bin-Win32 \
+    "C:/Program Files/Java/jdk1.8.0_211/bin" \
+    C:/ProgramData/npm \
+    C:/Users/sator/AppData/Local/Microsoft/WindowsApps \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64" \
+    "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.6.1 Tools/x64" \
+    "C:/Program Files (x86)/Windows Kits/10/bin/10.0.17763.0/x64" \
+    "C:/Program Files (x86)/Windows Kits/10/bin/x64" \
+    C:/Windows/Microsoft.NET/Framework64/v4.0.30319 \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin" \
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja"

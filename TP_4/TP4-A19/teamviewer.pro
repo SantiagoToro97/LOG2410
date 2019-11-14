@@ -5,11 +5,11 @@
 TEMPLATE = app
 TARGET = teamviewer
 DESTDIR = ./debug
+QT += core gui widgets printsupport
 CONFIG += debug
 DEFINES += _WINDOWS _UNICODE _ENABLE_EXTENDED_ALIGNED_STORAGE WIN64 QT_PRINTSUPPORT_LIB QT_WIDGETS_LIB
 INCLUDEPATH += . \
     ./debug \
-    ../../../../../../../../VulkanSDK/1.0.51.0/include \
     $(QTDIR)/mkspecs/win32-msvc
 DEPENDPATH += .
 MOC_DIR += ./GeneratedFiles/$(ConfigurationName)

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Generated Files">
@@ -25,55 +25,45 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Deployment Files">
+      <UniqueIdentifier>{D9D6E243-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>deploy</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Deployment Files">
+      <UniqueIdentifier>{D9D6E243-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>deploy</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TeamMember.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TeamManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Team.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TeamComponentView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_TeamViewer.cpp">
-      <Filter>Generated Files</Filter>
+    <ClCompile Include="TeamManager.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TeamViewer.cpp">
+    <ClCompile Include="TeamMember.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TeamMemberRole.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="debug\moc_predefs.h.cbt">
-      <Filter>Generated Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="release\moc_predefs.h.cbt">
-      <Filter>Generated Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="TeamViewer.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
+    <ClCompile Include="TeamViewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbsTeamComponent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TeamMember.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Team.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TeamManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TeamComponentContainer.h">
@@ -82,8 +72,63 @@
     <ClInclude Include="TeamComponentView.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TeamManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TeamMember.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="TeamMemberRole.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <QtMoc Include="TeamViewer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\moc_TeamViewer.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <CustomBuild Include="GeneratedFiles\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\LOGICIELS\QT5.13.0\5.13.0\WINRT_X64_MSVC2017\bin\Qt5Core.dll">
+      <Filter>Deployment Files</Filter>
+    </None>
+    <None Include="C:\LOGICIELS\QT5.13.0\5.13.0\WINRT_X64_MSVC2017\bin\Qt5Cored.dll">
+      <Filter>Deployment Files</Filter>
+    </None>
+    <None Include="C:\LOGICIELS\QT5.13.0\5.13.0\WINRT_X64_MSVC2017\bin\Qt5Gui.dll">
+      <Filter>Deployment Files</Filter>
+    </None>
+    <None Include="C:\LOGICIELS\QT5.13.0\5.13.0\WINRT_X64_MSVC2017\bin\Qt5Guid.dll">
+      <Filter>Deployment Files</Filter>
+    </None>
+    <None Include="C:\LOGICIELS\QT5.13.0\5.13.0\WINRT_X64_MSVC2017\bin\Qt5PrintSupport.dll">
+      <Filter>Deployment Files</Filter>
+    </None>
+    <None Include="C:\LOGICIELS\QT5.13.0\5.13.0\WINRT_X64_MSVC2017\bin\Qt5PrintSupportd.dll">
+      <Filter>Deployment Files</Filter>
+    </None>
+    <None Include="C:\LOGICIELS\QT5.13.0\5.13.0\WINRT_X64_MSVC2017\bin\Qt5Widgets.dll">
+      <Filter>Deployment Files</Filter>
+    </None>
+    <None Include="C:\LOGICIELS\QT5.13.0\5.13.0\WINRT_X64_MSVC2017\bin\Qt5Widgetsd.dll">
+      <Filter>Deployment Files</Filter>
+    </None>
+    <None Include="C:\LOGICIELS\QT5.13.0\5.13.0\WINRT_X64_MSVC2017\bin\libEGL.dll">
+      <Filter>Deployment Files</Filter>
+    </None>
+    <None Include="C:\LOGICIELS\QT5.13.0\5.13.0\WINRT_X64_MSVC2017\bin\libEGLd.dll">
+      <Filter>Deployment Files</Filter>
+    </None>
+    <None Include="C:\LOGICIELS\QT5.13.0\5.13.0\WINRT_X64_MSVC2017\bin\libGLESv2.dll">
+      <Filter>Deployment Files</Filter>
+    </None>
+    <None Include="C:\LOGICIELS\QT5.13.0\5.13.0\WINRT_X64_MSVC2017\bin\libGLESv2d.dll">
+      <Filter>Deployment Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
