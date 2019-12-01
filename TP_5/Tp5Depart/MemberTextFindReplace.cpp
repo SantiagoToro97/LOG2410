@@ -11,68 +11,99 @@
 #include "TeamMemberRole.h"
 #include "Team.h"
 
-MemberTextFindReplace::MemberTextFindReplace(const std::string * find_s, const std::string * replace_s)
+MemberTextFindReplace::MemberTextFindReplace(const std::string* find_s, const std::string* replace_s)
 {
 	setStrings(find_s, replace_s);
 }
 
-void MemberTextFindReplace::processTeamMember(TeamMember & member)
+void MemberTextFindReplace::processTeamMember(TeamMember& member)
 {
 	// Verifier si le nom du membre contient la chaine cherchee. Si oui
 	//      stocker l'iterateur sur le membre courant
 	//      si on doit remplacer la chaine
 	//           proceder au remplacement
+	int index = member.getName().find(m_findString);
+	if (index != std::string::npos) {
+		m_currentMember = member.begin();
+		if (m_doReplace) {
+			member.setName(member.getName().replace(index, m_findString.length(), m_replaceString));
+		}
+	}
 }
 
-void MemberTextFindReplace::processTeamMemberRole(TeamMemberRole & member)
+void MemberTextFindReplace::processTeamMemberRole(TeamMemberRole& member)
 {
 	// Traiter le role
 	// Verifier si le role du membre contient la chaine cherchee. Si oui
 	//      stocker l'iterateur sur le membre courant
 	//      si on doit remplacer la chaine
 	//           proceder au remplacement
+	int index = member.getRole().find(m_findString);
+	if (index != std::string::npos) {
+		m_currentMember = member.begin();
+		if (m_doReplace) {
+			 member.setRole(member.getRole().replace(index, m_findString.length(), m_replaceString));
+		}
+		m_result.push_back(m_currentMember);
+	}
 
 	// Pour traiter le nom, on delegue au membre
+	member.getMember().accept(*this);
+
 }
 
-void MemberTextFindReplace::processTeam(Team & team)
+void MemberTextFindReplace::processTeam(Team& team)
 {
 	// Pour traiter une equipe, on itere sur tous les membres en conservant dans le 
 	// visiteur l'iterateur sur le composant courant en train d'etre visite
+	for (auto it = team.begin(); it != team.end(); it++) {
+		m_result.push_back(it);
+		it->accept(*this);
+	}
+
 }
 
-void MemberTextFindReplace::setStrings(const std::string * find_s, const std::string * replace_s)
+void MemberTextFindReplace::setStrings(const std::string* find_s, const std::string* replace_s)
 {
 	// Initialiser la chaine de recherche (qui peut etre nulle)
 	// Verifier si la chaine de remplacement est non-nulle. Si oui initialiser m_doReplace a true et
 	// conserver la chaine de remplacement
+	m_doReplace = false;
+	if (find_s != nullptr) {
+		m_findString = *find_s;
+		if (replace_s != nullptr) {
+			m_doReplace = true;
+			m_replaceString = *replace_s;
+		}
+	}
 }
 
 std::string MemberTextFindReplace::findString(void) const
 {
 	// Retourner la chaine de recherche
-	return std::string();
+	return m_findString;
 }
 
 std::string MemberTextFindReplace::replaceString(void) const
 {
 	// Retourner la chaine de remplacement
-	return std::string();
+	return m_replaceString;
 }
 
 bool MemberTextFindReplace::doReplace(void) const
 {
 	// Retourner l'indicateur de remplacement
-	return false;
+	return m_doReplace;
 }
 
 TeamComponentIteratorContainer MemberTextFindReplace::searchResult(void) const
 {
 	// Retourner les iterateurs sur les composantes trouvees ou modifiees
-	return TeamComponentIteratorContainer();
+	return m_result;
 }
 
 void MemberTextFindReplace::clearSearch(void)
 {
 	// Vider la liste des iterateurs sur les composantes trouvees ou modifiees
+	m_result.clear();
 }
